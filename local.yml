@@ -1,7 +1,10 @@
----                                                        
- - hosts: all  
-   become: true                                           
-   tasks:                                                  
-     - name: Instalar Nginx                                
-       apt: name=nginx state=present update_cache=yes  
-      
+---
+- hosts: all
+
+  tasks:
+  - name: install example application
+    copy: 
+      src: ansible_test_app 
+      dest: /tmp/
+      owner: root
+      group: root
