@@ -1,0 +1,5 @@
+---                                                
+- hosts: all                                       
+  tasks:
+    - name: Buscando nome dos servidores                                           
+      command: hostname  
