@@ -1,5 +1,5 @@
 ---                                                        
- - hosts: all                                              
+ - hosts: app                                              
    tasks:                                                  
      - name: Instalar Nginx                                
        apt: name=nginx state=present update_cache=yes  
